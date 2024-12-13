@@ -1,0 +1,25 @@
+import { Word } from '../models/word.model';
+
+export const alphabetData: Word[] = [
+  { letter: 'B', color: '#ff6b6b' },
+  { letter: 'C', color: '#feca57' },
+  { letter: 'D', color: '#48dbfb' },
+  { letter: 'F', color: '#ff9ff3' },
+  { letter: 'G', color: '#54a0ff' },
+  { letter: 'H', color: '#5f27cd' },
+  { letter: 'J', color: '#ff6b6b' },
+  { letter: 'K', color: '#feca57' },
+  { letter: 'L', color: '#48dbfb' },
+  { letter: 'M', color: '#ff9ff3' },
+  { letter: 'N', color: '#54a0ff' },
+  { letter: 'P', color: '#5f27cd' },
+  { letter: 'Q', color: '#ff6b6b' },
+  { letter: 'R', color: '#feca57' },
+  { letter: 'S', color: '#48dbfb' },
+  { letter: 'T', color: '#ff9ff3' },
+  { letter: 'V', color: '#54a0ff' },
+  { letter: 'W', color: '#5f27cd' },
+  { letter: 'X', color: '#ff6b6b' },
+  { letter: 'Y', color: '#feca57' },
+  { letter: 'Z', color: '#48dbfb' },
+];
