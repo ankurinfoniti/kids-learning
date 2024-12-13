@@ -1,0 +1,28 @@
+<div class="row g-4" id="alphabet-container">
+  @for (item of data(); track $index) {
+    <div class="col-6 col-sm-4 col-md-3 col-lg-2">
+      <div
+        class="letter-card"
+        [attr.data-letter]="item.letter"
+        [attr.data-word]="item.word"
+        [style]="{ 'border-color': item.color }"
+        (click)="onLetterClick(item)"
+      >
+        <div class="letter-card-content">
+          <div class="letter">{{ item.letter }}</div>
+          @if (showImage) {
+            <div
+              class="image-placeholder"
+              [style.background]="
+                'linear-gradient(45deg, {{item.color}}, #ffffff)'
+              "
+            >
+              Image
+            </div>
+            <div class="word">{{ item.word }}</div>
+          }
+        </div>
+      </div>
+    </div>
+  }
+</div>

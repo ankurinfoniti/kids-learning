@@ -1,6 +1,6 @@
 import { Word } from '../models/word.model';
 
-const alphabetData: Word[] = [
+export const alphabetData: Word[] = [
   { letter: 'A', word: 'Apple', color: '#ff6b6b' },
   { letter: 'B', word: 'Boy', color: '#feca57' },
   { letter: 'C', word: 'Cat', color: '#48dbfb' },

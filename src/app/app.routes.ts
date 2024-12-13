@@ -8,4 +8,8 @@ export const routes: Routes = [
     component: HomeComponent,
     pathMatch: 'full',
   },
+  {
+    path: 'reading/:type',
+    loadComponent: () => import('./routes/letters/letter/letter.component'),
+  },
 ];

@@ -1,18 +1,19 @@
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
-  imports: [],
+  imports: [RouterLink],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
   lists = [
-    'Learn Capital Letter',
-    'Learn Small Letter',
-    'Learn Words',
-    'Learn Vowels',
-    'Learn Consonants',
-    'Learn Numbers',
+    { title: 'Learn Capital Letter', type: 'capital' },
+    { title: 'Learn Small Letter', type: 'small' },
+    { title: 'Learn Words', type: 'words' },
+    { title: 'Learn Vowels', type: 'vowels' },
+    { title: 'Learn Consonants', type: 'consonants' },
+    { title: 'Learn Numbers', type: 'numbers' },
   ];
 }

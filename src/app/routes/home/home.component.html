@@ -1,7 +1,9 @@
 <div class="row row-gap-3 text-center">
   @for (list of lists; track $index) {
-    <div class="col-md-3">
-      <button class="w-100 btn btn-primary">{{ list }}</button>
+    <div class="col-md-4">
+      <a [routerLink]="['reading', list.type]" class="w-100 btn btn-primary">
+        {{ list.title }}
+      </a>
     </div>
   }
 </div>
